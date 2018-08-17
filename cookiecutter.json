@@ -1,0 +1,11 @@
+{
+  "project_name": "My EOS project",
+  "app_name": "notechain",
+  "dir_name": "{{ cookiecutter.app_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "eos_dev_tag": "v1.1.0",
+  "eosio_container": "{{ cookiecutter.app_name.lower()|replace(' ', '_')|replace('-', '_') }}_container",
+  "default_account": "{{ cookiecutter.app_name[:8].lower()|replace(' ', '')|replace('-', '') }}.acc",
+  "default_wallet": "eosiomain",
+  "default_contract": "{{ cookiecutter.app_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "default_contract_wallet": "{{ cookiecutter.default_contract.lower()|replace(' ', '_')|replace('-', '_') }}_wallet"
+}
