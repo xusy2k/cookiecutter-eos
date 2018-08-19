@@ -1,5 +1,7 @@
 # Cookiecutter EOS
 
+![EOS 1.1.x](https://img.shields.io/badge/EOS-1.1.x-green.svg) ![EOS 1.2.x](https://img.shields.io/badge/EOS-1.2.x-red.svg)
+
 Creation of the skeleton of necessary files for programming contracts.
 
 ## Prerequisites
@@ -18,15 +20,15 @@ cookiecutter gh:xusy2k/cookiecutter-eos
 
 It will ask you some parameters:
 
-- **project_name**: Name of the project
-- **app_name**: Name of the main applicaction
-- **dir_name**: Name of the directory to install
-- **eos_dev_tag**: Tag version of eos-dev [docker's image](https://hub.docker.com/r/eosio/eos-dev/tags/)
-- **eosio_container**: Name of container
-- **default_account**: Name of default account
-- **default_wallet**: Name of default wallet
-- **default_contract**: Name of the first contract will be created
-- **default_contract_wallet**: Name of the wallet's contract
+- **project_name**: Name of the project. Default value: **My EOS project**
+- **app_name**: Name of the main applicaction. Default value: **notechain**
+- **dir_name**: Name of the directory to install. Default value: **notechain**
+- **eos_dev_tag**: Tag version of eos-dev [docker's image](https://hub.docker.com/r/eosio/eos-dev/tags/). Default value: **v1.1.0**
+- **eosio_container**: Name of container. Default value: **notechain_container**
+- **default_account**: Name of default account. Default value: **notechai.acc**
+- **default_wallet**: Name of default wallet. Default value: **eosiomain**
+- **default_contract**: Name of the first contract will be created. Default value: **notechain**
+- **default_contract_wallet**: Name of the wallet's contract. Default value: **notechain_wallet**
 
 Finally you will get inside **dir_name** all necessary files to begin to work based on repository [eosio-project-boilerplate-simple](https://github.com/EOSIO/eosio-project-boilerplate-simple) but customized for your own values
 
@@ -49,4 +51,4 @@ cookiecutter --no-input gh:xusy2k/cookiecutter-eos \
 
 ## Caveats
 
-- At this moment it only works on v1.1.x realease
+- At this moment it only works on v1.1.x release
